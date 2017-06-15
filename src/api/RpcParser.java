@@ -37,7 +37,7 @@ public class RpcParser {
 			response.addHeader("Access-Control-Allow-Origin", "*");
 			PrintWriter out = response.getWriter();
 			out.print(obj);
-			out.flush();
+			out.flush(); 
 			out.close();
 		} catch (Exception e) {
 			e.printStackTrace();
