@@ -15,16 +15,17 @@ import db.DBConnection;
 import db.MySQLDBConnection;
 
 /**
- * Servlet implementation class LoginServelet
+ * Servlet implementation class LoginServlet
  */
-@WebServlet("/LoginServelet")
-public class LoginServelet extends HttpServlet {
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final DBConnection connection = new MySQLDBConnection();
+
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public LoginServelet() {
+	public LoginServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

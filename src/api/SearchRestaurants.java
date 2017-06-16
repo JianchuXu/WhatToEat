@@ -39,11 +39,11 @@ public class SearchRestaurants extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// allow access only if session exists
-	/*	HttpSession session = request.getSession();
+		HttpSession session = request.getSession();
 		if (session.getAttribute("user") == null) {
 			response.setStatus(403);
 			return;
-		}*/
+		}
 
 		JSONArray array = new JSONArray();
 		if (request.getParameterMap().containsKey("lat")
